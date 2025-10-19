@@ -510,3 +510,65 @@ flex: 0 0 calc(100% / 7 - 20px);
     right: 20px;
     z-index: 1000;
 }
+
+.speech-bubble{
+    width: 100px;
+    margin:20px 15px;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+.sd{
+    height: 30px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius:12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sd:before{
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 60%;
+    top: 5px;
+    right: -2%;
+    background-color: #ffffff;
+    border: .5px solid #fffafa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    transform: rotate(-25deg) skewX(40deg);
+    z-index: -1;
+}
+
+.contact{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+.contact >i {
+    transform: scale(0.6);
+    animation: bubble 2s infinite ease-in-out;
+    box-shadow: 0 -5px 10px rgb(81, 81, 255), 0 5px 10px rgba(0, 0, 0, .2),-5px 0 10px rgba(70, 107, 255, 0.782);
+    z-index: 999;
+}
+
+
+@keyframes bubble{
+    0%{
+        padding: 15px 25px;
+        box-shadow: 0 -5px 10px rgba(81, 81, 255,0.2), 0 5px 10px rgba(0, 0, 0, .2),-5px 0 10px rgba(70, 107, 255, 0.782);
+        transform: scale(1);
+    }
+    50%{
+        padding: 20px 30px;
+        box-shadow: 0 -8px 15px rgba(81, 81, 255,0.1), 0 8px 15px rgba(0, 0, 0, .1),-8px 0 15px rgba(70, 107, 255, 0.1);
+        transform: scale(0.9);
+    }
+    100%{
+        padding: 15px 25px;
+        box-shadow: 0 -5px 10px rgba(81, 81, 255,0.2), 0 5px 10px rgba(0, 0, 0, .2),-5px 0 10px rgba(70, 107, 255, 0.782);
+        transform: scale(1);
+    }
+}
