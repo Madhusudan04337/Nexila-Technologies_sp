@@ -12,6 +12,23 @@ body {
     align-items: center;
 }
 
+.icon-color svg{
+    fill:#ffffff;
+    transition: fill 0.3s ease;
+}
+
+.icon-color:hover svg{
+    fill:#3773FE;
+}
+.icon-coloro svg{
+    fill:#3773FE;
+    transition: fill 0.3s ease;
+}
+
+.icon-coloro:hover svg{
+    fill:#ffffff;
+}
+
 .logo-icon{
     background-color: #4169e1;
     color: #ffffff;
@@ -48,7 +65,8 @@ body {
 }
 
 .phone-button{
-    background-color: #4169e1;
+    background-color: #3773FE;
+    border: 2px solid #3773FE;
     color: #ffffff !important;
     border-radius: 8px;
     padding: 10px 20px;
@@ -60,8 +78,9 @@ body {
 }
 
 .phone-button:hover{
-    background-color: #3a5ecc;
-    color: #ffffff !important;
+    border: 2px solid #3773FE;
+    color: #3773FE !important;
+    background-color: #ffffff !important;
 }
 
 .phone-icon {
@@ -199,6 +218,10 @@ body {
     line-height: 1.8;
 }
 
+.rounded-need{
+    border-radius: 12px;
+}
+
 .minicont-custom {
     color: #3773FE !important;
     background-color: #e9f7f7 !important;
@@ -277,18 +300,35 @@ body {
     color: rgba(0, 0, 0, 0.8);
 }
 
+.bg-banner{
+    width: 100%;
+    background-image: url(../Images/Banner-img.jpg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 600px;
+}
+.banner-content{
+    width: 725px;
+    position:absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* Adjustments for Smaller Screens */
 @media (max-width: 1024px) {
     .h2-custom {
-        font-size: 32px; /* updated */
+        font-size: 32px; 
     }
 
     .h2-large {
-        font-size: 50px;  /* updated */
+        font-size: 50px;  
     }
 
     .h3-custom {
-        font-size: 26px;  /* updated */
+        font-size: 26px;  
     }
 
     .p-large {
@@ -302,7 +342,7 @@ body {
     }
 
     .padding40 {
-        padding: 0 20px; /* Reduced padding for medium screens */
+        padding: 0 20px; 
     }
 
     .mt-32 {
@@ -310,7 +350,7 @@ body {
     }
 
     .imp-10 {
-        padding: 0 4%; /* updated */
+        padding: 0 4%; 
     }
 
     .ps-72 {
@@ -330,7 +370,7 @@ body {
     }
 
     .offset_v112 {
-        height: 45px  /* updated */
+        height: 45px  
     }
 
     .offset_w70 {
@@ -344,7 +384,7 @@ body {
 /* Adjustments for Mobile Screens */
 @media (max-width: 768px) {
     .h2-custom {
-        font-size: 32px !important; /* updated */
+        font-size: 32px !important; 
     }
 
     .h2-large {
@@ -352,7 +392,7 @@ body {
     }
 
     .p-large {
-        font-size: 18px;   /* updated */
+        font-size: 18px;  
     }
 
     .a-custom,
@@ -393,7 +433,7 @@ body {
         height: 50px;
     }
 
-    .offset_v112 {    /* updated*/
+    .offset_v112 {    
         height: 50px
     }
 
@@ -414,17 +454,16 @@ body {
 /* Hover effect for the entire card */
 .cardColo_change1:hover {
     background-color: #3773FE;
-    transform: translateY(-15px);
+    transform: translateY(-8px);
 }
 
-/* Change text color to white when hovering */
+
 .cardColo_change1:hover h3,
 .cardColo_change1:hover .fs-6,
 .cardColo_change1:hover .a-small {
     color: #ffffff;
 }
 
-/* Default color for the card text elements */
 .cardColo_change1 h3,
 .cardColo_change1 .fs-6 {
     color: #0D173BCC;
@@ -444,11 +483,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px; /* Adjust gap between images */
+    gap: 20px; 
 }
 
 .course-images > div {
-flex: 0 0 calc(100% / 7 - 20px); /* For large screens (more than 780px), images take space */
+flex: 0 0 calc(100% / 7 - 20px); 
 }
 
 @media (max-width: 780px) {
@@ -465,3 +504,9 @@ flex: 0 0 calc(100% / 7 - 20px); /* For large screens (more than 780px), images 
 }
 }
   
+.fixed-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
