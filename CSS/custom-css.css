@@ -573,3 +573,12 @@ flex: 0 0 calc(100% / 7 - 20px);
         transform: scale(1);
     }
 }
+
+/* Contact.html*/
+
+.gi-qr{
+    max-width: 150px;
+    max-height: 150px;
+    border: 5px solid#646464;
+    border-radius: 5px;
+}

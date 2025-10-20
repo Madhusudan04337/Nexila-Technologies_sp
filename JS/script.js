@@ -82,3 +82,43 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     });
 });
+
+document.getElementById("contactForm").addEventListener('submit',function(e){
+    e.preventDefault();
+    const contact = document.getElementById("contact");
+    const message = document.getElementById("message");
+    const contactError = document.getElementById("contactError");
+    const messageError = document.getElementById("messageError");
+
+    let valid = true;
+    if (contact.value.trim()=== ""){
+        contactError.classList.remove("d-none");
+        contact.classList.add("is-invalid");
+        valid=false;
+    }
+
+    if (message.value.trim()=== ""){
+        messageError.classList.remove("d-none");
+        message.classList.add("is-invalid");
+        valid=false;
+    }
+
+    if(valid){
+        alert("Form submitted successfully!")
+    }
+
+    contact.addEventListener("input",()=>{
+        if(contact.value.trim()!== ""){
+            contactError.classList.add("d-none");
+            contact.classList.remove("is-invalid");
+        }
+    });
+
+    message.addEventListener("input",()=>{
+        if(message.value.trim()!== ""){
+            messageError.classList.add("d-none");
+            message.classList.remove("is-invalid");
+        }
+    });
+
+})
