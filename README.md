@@ -128,6 +128,6 @@ This project is for educational and portfolio purposes only. It is a clone of a 
 
 ## Author
 
-* **[Your Name]**
-* **LinkedIn:** [https://www.linkedin.com/in/madhu-sudan-0006a429a/]
-* **GitHub:** [https://github.com/Madhusudan04337]
+* **Madhusudan**
+* **LinkedIn:** https://www.linkedin.com/in/madhu-sudan-0006a429a/
+* **GitHub:** https://github.com/Madhusudan04337
