@@ -7,6 +7,12 @@
 
 ---
 
+## 🚀 Live Demo
+
+**[View the live website here](https://madhusudan04337.github.io/nexila-technologies-clone/)**
+
+---
+
 ## Project Overview
 
 This project is a functional, front-end clone of the official [**Nexila Technologies website**](https://www.nexilatechnologies.com/).
