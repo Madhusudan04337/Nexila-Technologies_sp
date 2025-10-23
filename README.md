@@ -64,7 +64,7 @@ NexilaTechnologies/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Madhusudan04337/Nexila-Technologies_sp.git
+   git clone https://github.com/Madhusudan04337/nexila-technologies-clone.git
    cd nexila-technologies
    ```
 
